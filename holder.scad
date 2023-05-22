@@ -3,10 +3,10 @@
 include <lego_beam.scad>;
 
 
-bracket_len=486.2; // length of rack equipment mounting bracket 19 inch
+bracket_len=482.6; // length of rack equipment mounting bracket 19 inch
 bracket_height = 44; // actually 44.45 mm 1.75 inch
 body_len=449; // max length of equipment body
-ear_len=(bracket_len-body_len)/2; //18.6
+ear_len=(bracket_len-body_len)/2; //16.8
 
 scale([1,1,1]) {
 
