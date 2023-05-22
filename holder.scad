@@ -10,41 +10,42 @@ ear_len=(bracket_len-body_len)/2; //16.8
 
 scale([1,1,1]) {
 
-	translate([30/2-4/2,ear_len/2+4/2,-bracket_height/2+20/2]) {
+	translate([16/2-4/2,ear_len/2+4/2,-bracket_height/2+44/2]) {
 		rotate([90,0,0]) {
-            horizontal();
+            side_column();
         }
     }
 
-	translate([30/2-4/2,bracket_len/4-1.5*ear_len-4/2,-bracket_height/2+20/2]) {
+	translate([16/2-4/2,bracket_len/4-1.5*ear_len-4/2,-bracket_height/2+44/2]) {
 		rotate([90,0,0]) {
-            horizontal();
+            side_column();
         }
     }
 
 	translate([-4/2,(bracket_len/4-2*ear_len-2*4)/2+ear_len/2+4,-bracket_height/2+4/2]) {
 		rotate([0,180,0]) {
-            vertical2();
+            base();
+        }
+    }
+
+	translate([-4/2,(bracket_len/4-2*ear_len-2*4)/2+ear_len/2+4,+bracket_height/2-4/2]) {
+		rotate([0,180,0]) {
+            top();
         }
     }
 
 
-
-/*join*/
-    translate([30/2-4/2,bracket_len/4/2-20/2,-bracket_height/2+4/2])
-        cube(size = [30,20,4], center = true);
-
 /*left side*/
 	translate([0,0,0]) {
 		rotate([0,90,0]) {
-            vertical();
+            side();
         }
     }
 
 /*right side*/    
 	translate([0,bracket_len/4-ear_len,0]) {
 		rotate([0,90,0]) {
-            vertical();
+            side();
         }
     }
 
@@ -59,14 +60,14 @@ module m4_cone_3mm()
     }
 }
 
-module horizontal()
+module side_column()
 {
-        cube(size = [30,20,4], center = true);
+        cube(size = [16,44,4], center = true);
 }
 
 
 
-module vertical()
+module side()
 {
     difference() {
         union() {
@@ -82,12 +83,19 @@ module vertical()
     }
 }
 
-module vertical2()
+module top()
+{
+    translate([-16/2,0,-0])
+        cube(size = [16,bracket_len/4-2*ear_len/*-2*4*/,4], center = true);
+}
+
+
+module base()
 {
     difference() {
         union() {
             translate([-30/2,0,-0])
-                cube(size = [30,bracket_len/4-2*ear_len-2*4,4], center = true);
+                cube(size = [30,bracket_len/4-2*ear_len/*-2*4*/,4], center = true);
             translate([-(85+4)/2,-49/2,-0])
                 cube(size = [85+4,10,4], center = true);
             translate([-(85+4)/2, 49/2,-0])
