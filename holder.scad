@@ -10,47 +10,47 @@ ear_len=(bracket_len-body_len)/2; //16.8
 
 scale([1,1,1]) {
 
-	translate([16/2-4/2,ear_len/2+4/2,-bracket_height/2+44/2]) {
+	translate([16/2-4/2,-(bracket_len/4)/2+ear_len+4/2,-bracket_height/2+44/2]) {
 		rotate([90,0,0]) {
             side_column();
         }
     }
 
-	translate([16/2-4/2,bracket_len/4-1.5*ear_len-4/2,-bracket_height/2+44/2]) {
+	translate([16/2-4/2,(bracket_len/4)/2-ear_len-4/2,-bracket_height/2+44/2]) {
 		rotate([90,0,0]) {
             side_column();
         }
     }
-
-	translate([-4/2,(bracket_len/4-2*ear_len-2*4)/2+ear_len/2+4,-bracket_height/2+4/2]) {
+   
+	translate([-4/2,0,-bracket_height/2+4/2]) {
 		rotate([0,180,0]) {
             base();
         }
     }
 
-	translate([-4/2,(bracket_len/4-2*ear_len-2*4)/2+ear_len/2+4,+bracket_height/2-4/2]) {
+	translate([-4/2,0,+bracket_height/2-4/2]) {
 		rotate([0,180,0]) {
             top();
         }
     }
-
-
+    
+    
 /*left side*/
-	translate([0,0,0]) {
+	translate([0,-(bracket_len/4)/2+ear_len/2,0]) {
 		rotate([0,90,0]) {
             side();
         }
     }
 
 /*right side*/    
-	translate([0,bracket_len/4-ear_len,0]) {
+	translate([0,(bracket_len/4)/2-ear_len/2,0]) {
 		rotate([0,90,0]) {
             side();
         }
     }
 
-
 }
+
 
 module m4_cone_3mm()
 {
