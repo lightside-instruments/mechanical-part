@@ -7,16 +7,18 @@ bracket_len=482.6; // length of rack equipment mounting bracket 19 inch
 bracket_height = 44; // actually 44.45 mm 1.75 inch
 body_len=449; // max length of equipment body
 ear_len=(bracket_len-body_len)/2; //16.8
+horizontal_offset_from_end = 0.625*25.4/2; //0.625 inch is the side rail and the hole is in the middle
+slack=0.4;
 
 scale([1,1,1]) {
 
-	translate([16/2-4/2,-(bracket_len/4)/2+ear_len+4/2,-bracket_height/2+44/2]) {
+	translate([16/2-4/2,-(bracket_len/4)/2+ear_len+4/2,-bracket_height/2+(44/4)/2]) {
 		rotate([90,0,0]) {
             side_column();
         }
     }
 
-	translate([16/2-4/2,(bracket_len/4)/2-ear_len-4/2,-bracket_height/2+44/2]) {
+	translate([16/2-4/2,(bracket_len/4)/2-ear_len-4/2,-bracket_height/2+(44/4)/2]) {
 		rotate([90,0,0]) {
             side_column();
         }
@@ -27,17 +29,17 @@ scale([1,1,1]) {
             base();
         }
     }
-
+/*
 	translate([-4/2,0,+bracket_height/2-4/2]) {
 		rotate([0,180,0]) {
             top();
         }
     }
     
-    
+*/
 /*left side*/
 	translate([0,-(bracket_len/4)/2+ear_len/2,0]) {
-		rotate([0,90,0]) {
+		rotate([0,90,180]) {
             side();
         }
     }
@@ -48,7 +50,6 @@ scale([1,1,1]) {
             side();
         }
     }
-
 }
 
 
@@ -62,7 +63,7 @@ module m4_cone_3mm()
 
 module side_column()
 {
-        cube(size = [16,44,4], center = true);
+        cube(size = [16,44/4,4], center = true);
 }
 
 
@@ -71,12 +72,13 @@ module side()
 {
     difference() {
         union() {
-            cube(size = [bracket_height,ear_len,4], center = true);
+            translate([0,-slack,0])
+            cube(size = [bracket_height,ear_len-slack,4], center = true);
         }
         union() {
-            translate([-bracket_height/2+6.15,0,-5])
+            translate([-bracket_height/2+6.15,ear_len/2-horizontal_offset_from_end,-5])
                 cylinder(h=10, r1=3.55, r2=3.55);
-            translate([bracket_height/2-6.15,0,-5])
+            translate([bracket_height/2-6.15,ear_len/2-horizontal_offset_from_end,-5])
                 cylinder(h=10, r1=3.55, r2=3.55);
 
         }
