@@ -4,9 +4,9 @@ by Lightside Instruments AS.
 The project is published by Lightside Instruments AS
 under TAPR Open Hardware License.
 
-Design of a bracket that can hold the front and the bottom plates in position without - top, 2x side and back plates.
+Design of a 1.6 mm high Pi Zero sized mounting plate for Camera V2.1 with standoffs.
 
 
 BOM:
- 1x 10 mm 2.5M screw
- 1x 2.5M nut
+ 4x 8 mm M2 screw
+ 4x M2 nuts

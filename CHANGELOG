@@ -1,5 +1,5 @@
-lego4pizero (1.0) buster; urgency=medium
+camera4pizero (1.0) jammy; urgency=medium
 
-  * Raspbery Pi Zero 1.6 mm high board with 3x vertical (parallel to the shor side) lego technics brick
+  * Initial version
 
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sat, 28 May 2022 00:26:41 +0200
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Tue, 08 Aug 2023 15:27:41 +0200

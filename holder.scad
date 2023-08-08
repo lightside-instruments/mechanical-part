@@ -4,13 +4,6 @@ include <lego_beam.scad>;
 
 scale([1,1,1]) {
     horizontal_w_hole();
-    //vertical_lego_placed();
-
-    translate([-8/2+65/2,-8+30/2,1.6]) {
-        rotate([90,0,90]) {
-            lego_beam(3);
-		}
-	}
 }
 
 module vertical_lego()
@@ -28,11 +21,6 @@ module lego_beam_placed()
 			lego_beam(3);
 		}
 	}
-	//translate([10,4,-4]) {
-	//	rotate([0,0,90]) {
-	//		lego_beam(4);
-	//	}
-	//}
 }
 
 module vertical_lego_placed()
@@ -45,38 +33,6 @@ module vertical_lego_placed()
 }
 
 
-module vertical()
-{
-	linear_extrude(height=8, center=false, convexity=10)
-		import(file="vertical.dxf");
-}
-
-module vertical_w_hole()
-{
-    cr=6.1/2; //lego hole radius
-    ch=5.1; //cilinder height 4+1.1
-    difference() {
-        vertical();
-        union() {
-            translate([6,4,-1])
-                cylinder(h=ch, r1=cr, r2=cr);
-            translate([6,12,-1])
-                cylinder(h=ch, r1=cr, r2=cr);
-            translate([6,20,-1])
-                cylinder(h=ch, r1=cr, r2=cr);
-            translate([6,28,-1])
-                cylinder(h=ch, r1=cr, r2=cr);
-            translate([14,28,-1])
-                cylinder(h=ch, r1=cr, r2=cr);
-            translate([22,28,-1])
-                cylinder(h=ch, r1=cr, r2=cr);
-            translate([30,28,-1])
-                cylinder(h=ch, r1=cr, r2=cr);
-        }
-    }
-}
-
-
 module horizontal()
 {
 	linear_extrude(height=1.6, center=false, convexity=10)
@@ -85,17 +41,38 @@ module horizontal()
 
 module horizontal_w_hole()
 {
+
     difference() {
-        horizontal();
+        union () {
+            horizontal();
+            //camera standoffs
+            translate([65/2+12.4,30/2-21/2,-4])
+                    cylinder(h=4, r1=2, r2=2);
+            translate([65/2+12.4,30/2+21/2,-4])
+                    cylinder(h=4, r1=2, r2=2);
+            translate([65/2,30/2-21/2,-4])
+                    cylinder(h=4, r1=2, r2=2);
+            translate([65/2,30/2+21/2,-4])
+                    cylinder(h=4, r1=2, r2=2);
+        }
         union() {
             translate([3.5,3.5,-1])
-                cylinder(h=5.1, r1=1.25, r2=2.75/2);
+                cylinder(h=5.1, r1=2.75/2, r2=2.75/2);
             translate([65-3.5,3.5,-1])
-                cylinder(h=5.1, r1=1.25, r2=2.75/2);
+                cylinder(h=5.1, r1=2.75/2, r2=2.75/2);
             translate([65-3.5,30-3.5,-1])
-                cylinder(h=5.1, r1=1.25, r2=2.75/2);
+                cylinder(h=5.1, r1=2.75/2, r2=2.75/2);
             translate([3.5,30-3.5,-1])
-                cylinder(h=5.1, r1=1.25, r2=2.75/2);
+                cylinder(h=5.1, r1=2.75/2, r2=2.75/2);
+            //camera holes
+            translate([65/2+12.4,30/2-21/2,-10])
+                cylinder(h=20, r1=1.1, r2=1.1);
+            translate([65/2+12.4,30/2+21/2,-10])
+                cylinder(h=20, r1=1.1, r2=1.1);
+            translate([65/2,30/2-21/2,-10])
+                cylinder(h=20, r1=1.1, r2=1.1);
+            translate([65/2,30/2+21/2,-10])
+                cylinder(h=20, r1=1.1, r2=1.1);
         }
     }
 }
