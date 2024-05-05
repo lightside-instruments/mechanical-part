@@ -1,3 +1,9 @@
+lego4pizero (1.1) bookworm; urgency=medium
+
+  * Cleaned up unused code and corrected documentation
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sun, 05 May 2024 13:51:25 +0200
+
 lego4pizero (1.0) buster; urgency=medium
 
   * Raspbery Pi Zero 1.6 mm high board with 3x vertical (parallel to the shor side) lego technics brick
