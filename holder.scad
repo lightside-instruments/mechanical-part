@@ -3,7 +3,6 @@ $fn=50*1.0;
 include <lego_beam.scad>;
 
 scale([1,1,1]) {
-    //horizontal_w_hole();
     vertical_lego_placed();
 }
 
@@ -22,11 +21,6 @@ module lego_beam_placed()
 			lego_beam(3);
 		}
 	}
-	//translate([10,4,-4]) {
-	//	rotate([0,0,90]) {
-	//		lego_beam(4);
-	//	}
-	//}
 }
 
 module vertical_lego_placed()
@@ -71,28 +65,3 @@ module vertical_w_hole()
 }
 
 
-module horizontal()
-{
-	linear_extrude(height=4, center=false, convexity=10)
-		import(file="horizontal.dxf");
-}
-
-module horizontal_w_hole()
-{
-    difference() {
-        horizontal();
-        union() {
-            translate([12,12,-1])
-                cylinder(h=5.1, r1=1.25, r2=1.25);
-        }
-    }
-}
-
-module horizontal_w_hole_flipped()
-{
-	translate([4,0,4]) {
-		rotate([0,180,0]) {
-            horizontal_w_hole();
-        }
-    }
-}
