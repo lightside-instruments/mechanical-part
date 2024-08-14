@@ -1,3 +1,16 @@
+rackbracket-2u-12mm (2.1) jammy; urgency=medium
+
+  * Backported changes to rackbracket-3u-12mm-1.0
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 14 Aug 2024 03:11:05 +0200
+
+rackbracket-3u-12mm (1.0) jammy; urgency=medium
+
+  * Updated last rackbracket-2u-12mm release to have 3u height
+  * Fixed ~ 1mm offset error of the mounting holes
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 14 Aug 2024 02:40:39 +0200
+
 rackbracket-2u-12mm (2.0) buster; urgency=medium
 
   * Found bug in the M5 mounting hole offsets. Now in the middle of the minimum 16.8 mm bracket length
