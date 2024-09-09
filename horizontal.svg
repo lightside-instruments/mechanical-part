@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 793.7007874015749 1122.5196850393702"
+   width="793.7007874015749"
+   height="1122.5196850393702"
+   version="1.1"
+   id="svg1097"
+   sodipodi:docname="horizontal.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1099"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.0420943"
+     inkscape:cx="103.15765"
+     inkscape:cy="320.98823"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1095" />
+  <desc
+     id="desc1045">horizontal.dxf - scale = 1.000000, origin = (0.000000, 0.000000), method = manual</desc>
+  <defs
+     id="defs1059">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0.0"
+       refY="0.0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 L -3,3 M 0,-5 L  0,5"
+         style="stroke:#000000; stroke-width:0.5"
+         id="path1047" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path1050" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path1052" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path1054" />
+    </pattern>
+    <symbol
+       id="*MODEL_SPACE" />
+    <symbol
+       id="*PAPER_SPACE" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g1095">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.377953;stroke-miterlimit:3.94843;stroke-dashoffset:5;stroke-opacity:1"
+       id="rect1203"
+       width="307.20001"
+       height="485.66928"
+       x="0"
+       y="0" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.377953;stroke-miterlimit:3.94843;stroke-dashoffset:5;stroke-opacity:1"
+       id="path2820"
+       cx="153.60001"
+       cy="242.83464"
+       r="41.574802" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.377953;stroke-miterlimit:3.94843;stroke-dashoffset:5;stroke-opacity:1"
+       id="path2822"
+       cx="28.15748"
+       cy="11.338583"
+       r="6.0472441" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.377953;stroke-miterlimit:3.94843;stroke-dashoffset:5;stroke-opacity:1"
+       id="path2822-3"
+       cx="28.15748"
+       cy="474.33072"
+       r="6.0472441" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.377953;stroke-miterlimit:3.94843;stroke-dashoffset:5;stroke-opacity:1"
+       id="path2822-5"
+       cx="277.75748"
+       cy="11.338583"
+       r="6.0472441" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.377953;stroke-miterlimit:3.94843;stroke-dashoffset:5;stroke-opacity:1"
+       id="path2822-3-3"
+       cx="277.75748"
+       cy="474.33072"
+       r="6.0472441" />
+  </g>
+</svg>

@@ -1,26 +1,5 @@
-rackbracket-2u-12mm (2.1) jammy; urgency=medium
+eurorack-panel-16hp (1.0) noble; urgency=medium
 
-  * Backported changes to rackbracket-3u-12mm-1.0
+  * Initial release
 
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 14 Aug 2024 03:11:05 +0200
-
-rackbracket-3u-12mm (1.0) jammy; urgency=medium
-
-  * Updated last rackbracket-2u-12mm release to have 3u height
-  * Fixed ~ 1mm offset error of the mounting holes
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 14 Aug 2024 02:40:39 +0200
-
-rackbracket-2u-12mm (2.0) buster; urgency=medium
-
-  * Found bug in the M5 mounting hole offsets. Now in the middle of the minimum 16.8 mm bracket length
-  * Removed 1 mm rised base. Reduced from 4 mm to 3 mm slot depth
-  * Full length screw driver/ m4 screw head hole
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 15 Jul 2022 15:52:55 +0200
-
-rackbracket-2u-12mm (1.0) buster; urgency=medium
-
-  * Rack bracket for 2U 19 inch rack instruments with 12 inch 3 mm deep slot - HP, Agilient, Keysight
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Thu, 14 Jul 2022 21:07:12 +0200
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 09 Sep 2024 14:00:34 +0200
