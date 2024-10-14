@@ -1,3 +1,9 @@
+eurorack-panel-16hp (1.1) noble; urgency=medium
+
+  * Added Raspberry Pi mounting holes
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 14 Oct 2024 13:37:58 +0200
+
 eurorack-panel-16hp (1.0) noble; urgency=medium
 
   * Initial release
