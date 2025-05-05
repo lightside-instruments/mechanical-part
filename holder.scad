@@ -3,16 +3,27 @@ $fn=50*1.0;
 include <lego_beam.scad>;
 
 scale([1,1,1]) {
+difference() {
+    union() {
     horizontal_w_hole();
     //vertical_lego_placed();
 
-    translate([-8/2+65/2,-8+30/2,1.6]) {
-        rotate([90,0,90]) {
+    translate([-8+65/2,+8/2+30/2,1.6]) {
+        rotate([90,0,0]) {
             lego_beam(3);
 		}
 	}
 }
-
+union() {
+    translate([65/2,3.5,4]) {
+        cube([2.54*20+1,2.54*2,10], center=true);
+    }
+    translate([65/2,30-3.5,4]) {
+        cube([2.54*20+1,2.54*2,10], center=true);
+    }
+}
+}
+}
 
 module vertical_lego_placed()
 {

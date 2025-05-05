@@ -1,3 +1,9 @@
+lego4pizero (1.2) bookworm; urgency=medium
+
+  * Changed from horizontal to vertical mounting and added slots for connectors
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 05 May 2025 14:49:18 +0200
+
 lego4pizero (1.1) bookworm; urgency=medium
 
   * Cleaned up unused code and corrected documentation
