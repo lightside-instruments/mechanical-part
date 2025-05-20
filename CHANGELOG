@@ -1,3 +1,9 @@
+monitor4dinrail (1.0) bookworm; urgency=medium
+
+  * Initial version
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Tue, 20 May 2025 13:30:37 +0200
+
 lego4dinrail (1.1) bookworm; urgency=medium
 
   * Cleaned up unused code and corrected documentation
