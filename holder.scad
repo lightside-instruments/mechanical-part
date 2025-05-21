@@ -8,8 +8,11 @@ include <lego_beam.scad>;
 // side bars are 0.625 inch or 15.875 mm
 
 side_bar_width=15.875;
-//side_gap = (482.6-449)/2-side_bar_width;
-side_gap = (482.6-425.5)-(482.6-449)/2-side_bar_width; //Agilent 6060B is 425.5 mm wide instead of 449
+side_gap_full_length =   (482.6-449)/2-side_bar_width;
+side_gap_agilent_6060b = (482.6-425.5)/2-side_bar_width; //Agilent 6060B is 425.5 mm wide instead of 449
+
+side_gap = 2*side_gap_agilent_6060b-side_gap_full_length;
+
 scale([1,1,1]) {
 	translate([0,-(side_gap+side_bar_width)/2-3/2 ,12/2-2]) {
 		rotate([90,0,0]) {

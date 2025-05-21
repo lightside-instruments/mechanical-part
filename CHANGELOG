@@ -1,3 +1,9 @@
+rackbracket-2u-12mm (2.4) jammy; urgency=medium
+
+  * Fixes compensation length for Agilent 6060b ( 225.5 cm) mounted with full length equipment (249 cm) bracket on one side 
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 21 May 2025 16:21:00 +0200
+
 rackbracket-2u-12mm (2.3) jammy; urgency=medium
 
   * Fixed bug. Needed parametrized offset for the vertical plate.
