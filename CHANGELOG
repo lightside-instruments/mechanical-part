@@ -1,3 +1,9 @@
+rackbracket-2u-12mm (2.2) jammy; urgency=medium
+
+  * Corrected offset of mounting hole. Added variables instead of constants for offset
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 21 May 2025 13:16:12 +0200
+
 rackbracket-2u-12mm (2.1) jammy; urgency=medium
 
   * Backported changes to rackbracket-3u-12mm-1.0
