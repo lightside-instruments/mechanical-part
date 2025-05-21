@@ -8,10 +8,10 @@ include <lego_beam.scad>;
 // side bars are 0.625 inch or 15.875 mm
 
 side_bar_width=15.875;
-side_gap = (482.6-449)/2-side_bar_width;
-//side_gap = (482.6-425.5)-(482.6-449)/2-side_bar_width; //Agilent 6060B is 425.5 mm wide instead of 449
+//side_gap = (482.6-449)/2-side_bar_width;
+side_gap = (482.6-425.5)-(482.6-449)/2-side_bar_width; //Agilent 6060B is 425.5 mm wide instead of 449
 scale([1,1,1]) {
-	translate([0,6-28.8/2-1.5 ,12/2-2]) {
+	translate([0,-(side_gap+side_bar_width)/2-3/2 ,12/2-2]) {
 		rotate([90,0,0]) {
             vertical();
         }
@@ -51,12 +51,12 @@ module horizontal()
                 cylinder(h=10, r1=3.55, r2=3.55);
             union() {
                 rotate([90,0,0]) {
-                    translate([-44.45/2,13/4,-20/2])
-                       cylinder(h=20, r1=4.1, r2=4.1);
-                    translate([44.45/2,13/4,-20/2])
-                        cylinder(h=20, r1=4.1, r2=4.1);
-                    translate([0,13/4,-20/2])
-                        cylinder(h=20, r1=4.1, r2=4.1);
+                    translate([-44.45/2,13/4,-(side_gap+side_bar_width+1)/2])
+                       cylinder(h=side_gap+side_bar_width+2, r1=4.1, r2=4.1);
+                    translate([44.45/2,13/4,-(side_gap+side_bar_width+1)/2])
+                        cylinder(h=side_gap+side_bar_width+2, r1=4.1, r2=4.1);
+                    translate([0,13/4,-(side_gap+side_bar_width+1)/2])
+                        cylinder(h=side_gap+side_bar_width+2, r1=4.1, r2=4.1);
                 }
             }
         }
