@@ -6,12 +6,14 @@ include <lego_beam.scad>;
 // max length of equipment body 449
 // (482.6-449)/2 = 16.8
 // side bars are 0.625 inch or 15.875 mm
-
 side_bar_width=15.875;
 side_gap_full_length =   (482.6-449)/2-side_bar_width;
 side_gap_agilent_6060b = (482.6-425.5)/2-side_bar_width; //Agilent 6060B is 425.5 mm wide instead of 449
 
 side_gap = 2*side_gap_agilent_6060b-side_gap_full_length;
+
+horizontal_mounting_hole_distance = 465; //EIA-310 D
+horizontal_mounting_hole_from_end_offset = (482.6-horizontal_mounting_hole_distance)/2;
 
 scale([1,1,1]) {
 	translate([0,-(side_gap+side_bar_width)/2-3/2 ,12/2-2]) {
@@ -48,9 +50,9 @@ module horizontal()
             cube(size = [44.45*2,side_gap+side_bar_width,4], center = true);
         }
         union() {
-            translate([-44.45+6.35,(side_gap+side_bar_width)/2-side_bar_width/2,-5])
+            translate([-44.45+6.35,(side_gap+side_bar_width)/2-horizontal_mounting_hole_from_end_offset,-5])
                 cylinder(h=10, r1=3.55, r2=3.55);
-            translate([44.45-6.35,(side_gap+side_bar_width)/2-side_bar_width/2,-5])
+            translate([44.45-6.35,(side_gap+side_bar_width)/2-horizontal_mounting_hole_from_end_offset,-5])
                 cylinder(h=10, r1=3.55, r2=3.55);
             union() {
                 rotate([90,0,0]) {

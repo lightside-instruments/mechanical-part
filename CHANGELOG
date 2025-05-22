@@ -1,3 +1,9 @@
+rackbracket-2u-12mm (2.5) jammy; urgency=medium
+
+  * Fixed mounting holes offset. According to EIA-310-D they must be at 465 mm apart.
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Thu, 22 May 2025 15:54:51 +0200
+
 rackbracket-2u-12mm (2.4) jammy; urgency=medium
 
   * Fixes compensation length for Agilent 6060b ( 225.5 cm) mounted with full length equipment (249 cm) bracket on one side 
