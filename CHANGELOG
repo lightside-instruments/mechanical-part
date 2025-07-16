@@ -1,5 +1,5 @@
-spark-cabrio-holder (1.0) buster; urgency=medium
+pastemachine-standoff (1.0) noble; urgency=medium
 
-  * Initial commit
+  * Initial release
 
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 27 May 2022 02:28:16 +0200
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 16 Jul 2025 13:24:32 +0200
