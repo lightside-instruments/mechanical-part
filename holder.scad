@@ -21,19 +21,24 @@ module vertical()
 		    import(file="vertical.dxf");
 }
 
-module vertical_w_hole()
+module vertical2()
 {
-    cr=4.1/2; 
-    ch=8.1*2;
-    difference() {
-        vertical();
-        union() {
-            for ( i = [1,3,4,5,8,9,10,11,12,13,14,15,16,17,18,19])
-            translate([i*10,4,0])
-                rotate([90,0,0])
-                cylinder(h=ch, r1=cr, r2=cr, center=true);
-        }
+    union() {
+        cube([20, 26 /*2mm slack*/, 20],center=true);
+        translate([12,11,0])
+        cube([4,4,20],center=true);
     }
 }
 
+module vertical_w_hole()
+{
+    cr=4.1/2; 
+    difference() {
+        vertical2();
+ 
+            translate([0,0,0])
+                rotate([90,0,0])
+                cylinder(h=27, r1=cr, r2=cr, center=true);
+    }
+}
 
