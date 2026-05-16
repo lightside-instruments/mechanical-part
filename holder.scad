@@ -1,4 +1,6 @@
-$fn=50*1.0;
+// Higher definition curves
+//$fs = 0.01;
+$fn = 100;
 
 include <lego_beam.scad>;
 
@@ -33,10 +35,40 @@ module vertical_lego_placed()
 }
 
 
+module hook() {
+  // Top blob
+  square([11, 2.9]);
+  cirlceR = 4.9;
+  translate([cirlceR, cirlceR + 9 - cirlceR, 0]) circle(cirlceR);
+  translate([11 - 6, 2.9, 0]) square([6, 11]);  
+  square(9, 5);
+  
+  // Hook
+  translate([9, 10-5.1])
+  minkowski() {
+    square([5, 8]);
+    circle(1);
+  }
+  
+  // Peg
+  translate([16+11.8, 0, 0]) minkowski() {
+    square([12.8, 4.5]);
+    circle(1);
+  }
+  
+  translate([0, -1, 0]) square([47, 1]);
+}
+
 module vertical()
 {
-	linear_extrude(height=8, center=false, convexity=10)
-		import(file="vertical.dxf");
+    translate([50, 14, 0])
+    rotate([0,0,180])
+    union() {
+	linear_extrude(height=2.6, center=false, convexity=10)
+		hook();
+    translate([0,-8.0,0])
+        cube([55,8,8]);
+    }
 }
 
 module vertical_w_hole()
