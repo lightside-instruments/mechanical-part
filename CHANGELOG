@@ -1,3 +1,9 @@
+jedec-matrix-tray (1.1) trixie; urgency=medium
+
+  * Added rendered image of the result running part.py in freecad
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 02 Sep 2026 01:08:39 +0200
+
 jedec-matrix-tray (1.0) trixie; urgency=medium
 
   * Initial
