@@ -1,31 +1,5 @@
-rackbracket-pi (1.4) jammy; urgency=medium
-
-  * Fixd bug in holes horizontal position
-  * Reduced size of side column from full 44mm to 44/4
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Tue, 23 May 2023 01:46:10 +0200
-
-rackbracket-pi (1.3) jammy; urgency=medium
-
-  * Modified design to be symmetric to the coordinate system
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 22 May 2023 21:51:34 +0200
-
-rackbracket-pi (1.2) jammy; urgency=medium
-
-  * Added top bar to make the bracket more sturdy
-  * Renamed modules to make the code more readable
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 22 May 2023 21:06:33 +0200
-
-rackbracket-pi (1.1) jammy; urgency=medium
-
-  * Fixed bug in assigned 19 inch width constant 486.2->482.6 mm
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sun, 21 May 2023 12:38:16 +0200
-
-rackbracket-pi (1.0) bullseye; urgency=medium
+jedec-matrix-tray (1.0) trixie; urgency=medium
 
   * Initial
 
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Thu, 15 Sep 2022 16:59:49 +0200
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 02 Sep 2026 00:56:04 +0200
